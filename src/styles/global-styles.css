@@ -4,7 +4,7 @@ body {
     color: var(--text-primary);
     font-size: var(--font-size-sm);
     font-family: var(--font-sans);
-    line-height: var(--leading-normal);
+    line-height: var(--leading-relaxed);
     font-size-adjust: from-font;
     margin: 0;
 }

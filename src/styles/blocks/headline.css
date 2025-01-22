@@ -1,0 +1,5 @@
+.headline {
+    font-size: var(--font-size-6xl);
+    max-width: 35ch;
+    line-height: var(--leading-none);
+}

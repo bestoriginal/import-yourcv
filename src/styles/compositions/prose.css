@@ -3,7 +3,7 @@
 }
 
 .prose h1 {
-    max-width: 20ch;
+    /* max-width: 20ch; */
 }
 
 .prose :is(h1, h2, h3) {
@@ -12,16 +12,16 @@
 }
 
 .prose h2 {
-    max-width: 30ch;
+    /* max-width: 30ch; */
 }
 
 .prose h3 {
-    max-width: 40ch;
+    /* max-width: 40ch; */
 }
 
 /* Increase legibility by limiting line lengths */
 .prose :is(p, li, dl, figcaption, blockquote) {
-    max-width: 60ch;
+    max-width: 70ch;
     text-wrap: pretty;
 }
 

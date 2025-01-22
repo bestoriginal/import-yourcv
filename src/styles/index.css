@@ -6,3 +6,6 @@
 @import "./compositions/prose.css";
 @import "./utilities/visually-hidden.css";
 @import "./utilities/region.css";
+@import "./utilities/highlight.css";
+@import "./blocks/headline.css";
+@import "./blocks/faq.css";

@@ -1,0 +1,7 @@
+.highlight {
+    background-color: var(--surface-primary-inverted);
+    padding-block: calc(var(--space-2xs) - 6px);
+    padding-inline: calc(var(--space-2xs) - 3px);
+    border-radius: var(--radius-sm);
+    color: var(--text-primary-inverted);
+}
