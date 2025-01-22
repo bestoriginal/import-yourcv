@@ -1,0 +1,45 @@
+/*
+BREAKOUT
+A layout pattern that allows child elements to break out of their
+container's padding. Uses CSS Grid to create a three-column layout
+where elements can either respect or ignore the container's padding.
+
+CUSTOM PROPERTIES
+--breakout-padding-inline: Size of inline padding (left/right)
+--breakout-padding-block-start: Size of top padding
+--breakout-padding-block-end: Size of bottom padding
+
+EXCEPTIONS
+[data-full-bleed]: Allows element to break out of padding
+*/
+
+.breakout {
+    padding: 0 !important;
+    padding-block-start: var(--breakout-padding-block-start, 0) !important;
+    padding-block-end: var(--breakout-padding-block-end, var(--space-md)) !important;
+
+    display: grid;
+    grid-template-columns:
+        var(--breakout-padding-inline, var(--space-md))
+        1fr
+        var(--breakout-padding-inline, var(--space-md));
+
+    > * {
+        grid-column: 2;
+    }
+
+    > [data-full-bleed] {
+        grid-column: 1 / -1;
+    }
+}
+
+/* Usage:
+<Card 
+    class="breakout"
+    style={{
+        "--breakout-padding-inline": "var(--card-padding-inline)",
+        "--breakout-padding-block-start": "0", // For flush header
+        "--breakout-padding-block-end": "var(--card-padding-block)"
+    }}
+>
+*/

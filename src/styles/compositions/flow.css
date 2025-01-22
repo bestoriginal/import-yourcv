@@ -1,0 +1,37 @@
+/* 
+FLOW COMPOSITION 
+Like the Every Layout stack: https://every-layout.dev/layouts/stack/
+Info about this implementation: https://piccalil.li/quick-tip/flow-utility/ 
+*/
+.flow > * + *,
+.flow > * + :where(astro-island, astro-slot) > *:first-child {
+    margin-block-start: var(--flow-space, 1em);
+}
+
+[data-flow-space="2xs"] {
+    --flow-space: var(--space-2xs);
+}
+
+[data-flow-space="xs"] {
+    --flow-space: var(--space-xs);
+}
+
+[data-flow-space="sm"] {
+    --flow-space: var(--space-sm);
+}
+
+[data-flow-space="md"] {
+    --flow-space: var(--space-md);
+}
+
+[data-flow-space="lg"] {
+    --flow-space: var(--space-lg);
+}
+
+[data-flow-space="xl"] {
+    --flow-space: var(--space-xl);
+}
+
+[data-flow-space="2xl"] {
+    --flow-space: var(--space-2xl);
+}

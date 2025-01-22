@@ -1,0 +1,65 @@
+.prose {
+    --flow-space: var(--space-lg);
+}
+
+.prose h1 {
+    max-width: 20ch;
+}
+
+.prose :is(h1, h2, h3) {
+    /* Allow words to break by default. Great for small viewports */
+    overflow-wrap: anywhere;
+}
+
+.prose h2 {
+    max-width: 30ch;
+}
+
+.prose h3 {
+    max-width: 40ch;
+}
+
+/* Increase legibility by limiting line lengths */
+.prose :is(p, li, dl, figcaption, blockquote) {
+    max-width: 60ch;
+    text-wrap: pretty;
+}
+
+/* Heading flow for elements that follow them */
+.prose :is(h1, h2, h3, h4) + *:not([class]) {
+    --flow-space: var(--space-md);
+}
+
+/* Add more space on and around figures and tables */
+.prose :is(figure, table),
+.prose :is(figure, table) + * {
+    --flow-space: var(--space-2xl);
+}
+
+/* Add more space to headings on block start */
+.prose * + :is(h1, h2, h3, h4):not([class]) {
+    --flow-space: var(--space-xl);
+}
+
+/* Flow for list items */
+.prose :is(ul, ol):not([class]) li + li,
+.prose :is(ul, ol):not([class]) li > :is(ol, ul) {
+    margin-block-start: var(--space-xs);
+}
+
+/* Add a subtle stroke to media in case the background blends with the prose container */
+.prose :is(img, picture, video, svg[width][height]) {
+    border: var(--border-light);
+}
+
+/* Add lots of space for horizontal rules */
+hr {
+    --flow-space: var(--space-2xl);
+}
+
+/* Undo the breaking of words rule because we don't need it on larger viewports */
+@media (min-width: 768px) {
+    .prose :is(h1, h2, h3) {
+        overflow-wrap: unset;
+    }
+}
