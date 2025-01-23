@@ -13,10 +13,6 @@ details:not(:first-of-type) {
     padding-block: 1.5em;
 }
 
-.faq-item p {
-    font-size: var(--font-size-sm);
-}
-
 .faq-item-summary {
     list-style: none;
     cursor: pointer;
