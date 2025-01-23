@@ -1,5 +1,4 @@
 .highlight {
-    background-color: var(--surface-primary-inverted);
-    color: var(--text-primary-inverted);
+    color: deeppink;
     display: inline-block;
 }

@@ -11,18 +11,28 @@ import "../styles/index.css";
         <meta name="generator" content={Astro.generator} />
         <title>yourcv.site</title>
     </head>
-    <body data-theme="compact">
+    <body data-theme="">
         <slot />
     </body>
-    <footer class="wrapper region" style="--wrapper-max-width: 70rem">
-        <p>
-            setup.yourcv.site is a free tool to help you deploy, edit, and update your read.cv
-            profile.
-        </p>
+    <footer class="wrapper region" style="--wrapper-max-width: 30rem">
+        <small>Thanks for reading this far. A ridiculous effort.</small>
+        <small>
+            Reach out at&nbsp;<strong
+                ><a href="mailto:mark.tomlinson3@gmail.com">mark.tomlinson3@gmail.com</a></strong
+            >
+        </small>
+
+        <style>
+            footer {
+                small {
+                    display: block;
+                    color: var(--text-subtle);
+                }
+
+                a {
+                    color: var(--color-neutral-600);
+                }
+            }
+        </style>
     </footer>
 </html>
-<style>
-    footer p {
-        color: var(--text-subtle);
-    }
-</style>

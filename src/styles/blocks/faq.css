@@ -1,11 +1,11 @@
 .faq-list {
     padding-inline: var(--space-md);
     background-color: var(--surface-primary);
-    border: var(--border-light);
+    border: var(--border-medium);
 }
 
 details:not(:first-of-type) {
-    border-top: 1px solid var(--surface-secondary);
+    border-top: var(--border-medium);
     padding-top: var(--space-md);
 }
 
@@ -24,7 +24,7 @@ details:not(:first-of-type) {
     gap: 1em;
     justify-content: space-between;
     font-size: var(--font-size-lg);
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-bold);
 }
 
 summary::-webkit-details-marker,

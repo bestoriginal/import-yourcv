@@ -31,7 +31,7 @@
     --text-secondary-inverted: var(--color-neutral-100);
     --text-inactive: var(--color-neutral-400);
     --text-accent: var(--color-blue-600);
-    --text-subtle: var(--color-neutral-500);
+    --text-subtle: var(--color-neutral-400);
     --text-subtle-inverted: var(--color-neutral-400);
     --surface-primary: var(--color-neutral-50);
     --surface-primary-hover: var(--color-neutral-200);
