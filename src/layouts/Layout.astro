@@ -9,18 +9,20 @@ import "../styles/index.css";
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="generator" content={Astro.generator} />
-        <title>Astro Basics</title>
+        <title>yourcv.site</title>
     </head>
-    <body>
+    <body data-theme="compact">
         <slot />
     </body>
+    <footer class="wrapper region" style="--wrapper-max-width: 70rem">
+        <p>
+            setup.yourcv.site is a free tool to help you deploy, edit, and update your read.cv
+            profile.
+        </p>
+    </footer>
 </html>
-
 <style>
-    html,
-    body {
-        margin: 0;
-        width: 100%;
-        height: 100%;
+    footer p {
+        color: var(--text-subtle);
     }
 </style>

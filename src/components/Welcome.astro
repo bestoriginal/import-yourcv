@@ -7,41 +7,16 @@
                 home of a free tool that helps you turn your exported <a href="https://read.cv"
                     ><span class="highlight">read.cv</span></a
                 > profile data into
-                <strong>your own website</strong> (in as few clicks as possible™️). Same profile but
-                yours until...solar flares get us or whatever...
+                <strong>your own <i>editable</i> website</strong> (in as few clicks as possible™️). Same
+                profile but yours until...solar flares get us or whatever.
             </p>
 
-            <h2>🚧 This site is not a platform or a posts replacement 😂 🚧</h2>
-            <p>
-                You will only ever visit the site you're on right now one time (technically twice,
-                if you come back to use the tool, I suppose).
-            </p>
-            <h2>Why am I building this?</h2>
-            <p>
-                I was an early adopter(?) of read.cv. I didn't post much because I'm mainly a
-                developer and never had any amazing creative projects to show off 😥. But <a
-                    href="https://read.cv"><span class="highlight">read.cv</span></a
-                > was probably my favorite website - both in its concept and in the reality of the thing.
-            </p>
-            <p>
-                I would love it if I could help some people keep their profiles alive. More
-                materially, I guess it could be a good way to connect with more people. It would be
-                an absolute dream if this could somehow turn into a COMMUNITY tool 🙏. <a
-                    href="mailto:mark.tomlinson3@gmail.com">Message me</a
-                >&nbsp;if you know how to do that.
-            </p>
-            <p>
-                Last, it can be confusing to figure out how to deploy a website, even if you have
-                the code, and it would suck if people who wanted to keep their profile alive,
-                couldn't.
-            </p>
-
-            <h2>Sure...but what does it do again?</h2>
-
+            <h2>Wait...what does it do again?</h2>
+            <p>Two main things:</p>
             <ol>
-                <li>Helps you get your read.cv profile up and running as its own site quickly.</li>
                 <li>
-                    Extends the read.cv export code to bake in a few extra and IMO spicy features:
+                    It extends the read.cv export code to bake in a few extra and IMO spicy
+                    features:
                     <ul>
                         <li>
                             <strong>Profile editing!</strong>
@@ -53,21 +28,47 @@
                         <li>
                             <strong>Update sharing!</strong>
                             <p>
-                                Off by default but if you enable it, updates you make to your
-                                profile will be sent to a community hub. Think the current read.cv
-                                home page 🥹.
+                                Disabled by default, but if enabled (through your admin panel)
+                                updates you make to your profile will be sent to a community hub for
+                                showcasing. Think the read.cv explore page 🥹.
                             </p>
                         </li>
                         <li>
                             <strong>Anytime data export!</strong>
                             <p>
                                 I'm adding a button to the admin page/panel that will let you export
-                                your data at any stage.
+                                your site's content at any stage.
                             </p>
                         </li>
                     </ul>
                 </li>
+                <li>
+                    It helps you deploy your site to a deployment platform (e.g. Netlify) with the
+                    minimum amount of clicking around as possible.
+                </li>
             </ol>
+
+            <h2>Why build this?</h2>
+            <p>
+                I was an early adopter(?) of read.cv. I didn't post much over the years because I'm
+                mainly a developer and never had any amazing creative projects to show off 😥. But <a
+                    href="https://read.cv"><span class="highlight">read.cv</span></a
+                > was probably my favorite website - both in its concept and in the reality of the thing.
+            </p>
+            <p>
+                I would love it if I could help some people keep their profiles alive. Even better
+                if some concept of the explore page lived on. More materially, I guess it could be a
+                good way to connect with more people. It would be an absolute dream if this could
+                somehow turn into a COMMUNITY tool 🙏. <a href="mailto:mark.tomlinson3@gmail.com"
+                    >Message me</a
+                >&nbsp;if you know how to make that happen.
+            </p>
+            <p>
+                Last, it can be confusing to figure out how to deploy a website, even if you have
+                the code, and it would suck if people who wanted to keep their profile alive,
+                couldn't.
+            </p>
+
             <h2>But didn't the team give us an app to deploy already?</h2>
             <p>
                 They did and it's great. If you just want to deploy that but aren't sure how, there
@@ -80,9 +81,15 @@
                 Yes, a totally good approach. The point here definitely isn't to convince you that
                 deploying your own code is the right or best approach.
             </p>
+            <h2>Is this another posts or read.cv replacement?</h2>
+            <p>
+                No, this is not a platform. You will only ever visit the site you're on right now
+                one time (technically twice, if you come back to use the tool, I suppose).
+            </p>
         </div>
-        <div class="region flow faq">
-            <h2>More questions...</h2>
+
+        <div class="flow faq">
+            <h2>(Slightly) more (technical) questions...</h2>
             <div class="faq-list">
                 <details class="faq-item flow">
                     <summary class="faq-item-summary">
@@ -92,7 +99,7 @@
                         <p>
                             It depends a little on the platform you choose and whether you already
                             have a github account. We're talking like 4 - 5 including you uploading
-                            your exported data. I mean, don't hold me to that but it's around that.
+                            your exported data. I mean, don't hold me to that exactly.
                         </p>
                     </div>
                 </details>
@@ -164,23 +171,6 @@
                 </details>
                 <details class="faq-item flow">
                     <summary class="faq-item-summary">
-                        Wait, go back to the data part? Who owns that? Who can see that?
-                    </summary>
-                    <div>
-                        <p>
-                            Your data is encrypted before being stored, so while services like
-                            Upstash/Redis store the encrypted data, they can't actually read it.
-                            Only your site, with its unique encryption key, can decrypt and display
-                            the information. You maintain full control over your data, and no one
-                            else (including the storage providers) can access its contents. Having
-                            said that, the only data that will be saved is data you explicilty
-                            entered to be displayed on your site, so this is very likely not to be a
-                            concern in the first place!
-                        </p>
-                    </div>
-                </details>
-                <details class="faq-item flow">
-                    <summary class="faq-item-summary">
                         What about if the admin page/panel breaks? Am I just stuck unable to update
                         my site?
                     </summary>
@@ -196,12 +186,13 @@
                 </details>
                 <details class="faq-item flow">
                     <summary class="faq-item-summary">
-                        What's the tech stack? After all, it's MY code and I demand to know.
+                        What's the tech stack? After all, it will be MY code and I demand to know.
                     </summary>
                     <div>
                         <p>
-                            Astro.js + typescript + vanilla CSS. React for any heavily interactive
-                            parts.
+                            Astro.js + TypeScript + vanilla CSS. React for any heavily interactive
+                            parts. You want to know what the sneaky best part about all this? The
+                            code is yours to learn from, play with, make better, extend...
                         </p>
                     </div>
                 </details>
@@ -222,9 +213,9 @@
                     <summary class="faq-item-summary"> When will it be ready? </summary>
                     <div>
                         <p>
-                            Depends a little on interest but definitely by the time read.cv goes
-                            down else what's the point I guess. Also, the right help could speed it
-                            up!
+                            Depends a little on interest but it would definitely be good to get an
+                            alpha out by the time read.cv goes down. Also, the right help could
+                            speed it up.
                         </p>
                     </div>
                 </details>

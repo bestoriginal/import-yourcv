@@ -24,6 +24,7 @@ details:not(:first-of-type) {
     gap: 1em;
     justify-content: space-between;
     font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
 }
 
 summary::-webkit-details-marker,

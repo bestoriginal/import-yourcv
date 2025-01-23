@@ -158,3 +158,82 @@
 
     --icon-size: 1rem;
 }
+
+[data-theme="compact"] {
+    /* Smaller border radius */
+    --radius-sm: 0.1rem;
+    --radius-md: 0.2rem;
+    --radius-lg: 0.3rem;
+
+    /* Reduced gutters and spacing */
+    --gutter: var(--space-xs);
+    --flow-space: var(--space-xs);
+    --region-space: var(--space-3xl);
+
+    /* Optional: Add a slightly different color scheme */
+    --color-neutral-50: #f0f4f8;
+    --color-neutral-100: #d9e2ec;
+    --color-neutral-200: #bcccdc;
+    --color-neutral-300: #9fb3c8;
+    --color-neutral-400: #829ab1;
+    --color-neutral-500: #627d98;
+    --color-neutral-600: #486581;
+    --color-neutral-700: #334e68;
+    --color-neutral-800: #243b53;
+    --color-neutral-900: #102a43;
+
+    /* Reassign semantic color variables */
+    --text-primary: var(--color-neutral-900);
+    --text-primary-inverted: var(--color-neutral-50);
+    --text-secondary: var(--color-neutral-800);
+    --text-secondary-inverted: var(--color-neutral-100);
+    --text-inactive: var(--color-neutral-400);
+    --text-subtle: var(--color-neutral-500);
+
+    --surface-primary: var(--color-neutral-50);
+    --surface-primary-hover: var(--color-neutral-200);
+    --surface-primary-inverted: var(--color-neutral-900);
+    --surface-primary-inverted-hover: var(--color-neutral-800);
+    --surface-secondary: var(--color-neutral-200);
+    --surface-secondary-inverted: var(--color-neutral-800);
+    --surface-secondary-hover: var(--color-neutral-100);
+    --surface-inactive: var(--color-neutral-200);
+    --surface-accent: var(--color-neutral-900);
+
+    --stroke-color-primary: var(--color-neutral-900);
+    --stroke-color-primary-hover: var(--color-neutral-300);
+    --stroke-color-secondary: var(--color-neutral-800);
+    --stroke-color-secondary-hover: var(--color-neutral-700);
+    --stroke-color-outline: var(--color-neutral-800);
+    --stroke-color-input: var(--stroke-color-primary);
+
+    --border-light: solid 1px var(--stroke-color-secondary);
+    --radio-group-border: solid 1px var(--stroke-color-secondary);
+
+    --input-bg: var(--surface-primary);
+    --input-font-color: var(--text-primary);
+    --input-padding-block: var(--space-2xs);
+    --input-padding-inline: var(--space-xs);
+    --input-font-family: var(--font-sans);
+    --input-font-size: var(--font-size-sm);
+    --input-font-weight: var(--font-weight-normal);
+    --input-border-color: var(--stroke-color-input);
+    --input-border-width: var(--stroke-width);
+    --input-border-style: var(--stroke-style);
+    --input-radius: var(--radius-md);
+    --input-shadow: var(--shadow-sm);
+    --label-gap: var(--space-2xs);
+    --label-inline-gap: var(--space-xs);
+
+    --focus-ring-color: var(--color-neutral-900);
+    --focus-ring-offset: -4px;
+    --focus-ring-width: 2px;
+
+    --tabs-list-bg: var(--surface-secondary);
+    --tabs-trigger-bg: var(--surface-secondary);
+    --tabs-trigger-color: var(--text-primary);
+    --tabs-trigger-active-bg: var(--surface-primary);
+    --tabs-trigger-active-color: var(--text-primary);
+
+    --card-bg: var(--surface-primary);
+}

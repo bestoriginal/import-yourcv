@@ -243,7 +243,7 @@ caption {
     margin-block-start: var(--space-sm);
 }
 
-a:not([class]):hover {
+/* a:not([class]):hover {
     text-underline-offset: 0.2lh;
 }
 
@@ -254,7 +254,7 @@ a:not([class]):hover {
 
 :is(h1, h2, h3, h4) a:not([class]):hover {
     text-underline-offset: 0.3ex;
-}
+} */
 
 ::selection {
     color: var(--text-primary-inverted);
